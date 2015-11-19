@@ -5,6 +5,7 @@ This is a source code for my tutorial. For detail, please check the link below.
 [Official Tutorial Page](http://www.mokuji.me/article/reactjs-tutorial-for-beginners-email-registration)
 
 This is what a form looks like:
+
 <img src="screenshot.png" style="max-width:100%;display:block;" />
 
 ### Running
