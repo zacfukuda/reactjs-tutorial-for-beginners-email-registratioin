@@ -1,11 +1,11 @@
 # React.js Tutorial for Beginners - Email Registration Form
 
-This is a source code of my tutorial. For detail, please check the link below.
+This is a source code for my tutorial. For detail, please check the link below.
 
 [Official Tutorial Page](http://www.mokuji.me/article/reactjs-tutorial-for-beginners-email-registration)
 
-This is what a form looks like;
-<img src="screenshot.jpg" style="max-width:100%;" />
+This is what a form looks like:
+<img src="screenshot.jpg" style="max-width:100%;display:block;" />
 
 ### Running
 
@@ -27,5 +27,6 @@ To build a minified version, run this command:
 ```bash
 $ npm run build
 ```
+This will output bundle.min.js in the js directory.
 
 To run the app, just open the index.html file in a browser.

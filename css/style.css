@@ -32,7 +32,11 @@ input {
 /*.ok { border: 1px solid #0AA911; }
 .err { border: 1px solid #f00; }*/
 
-.feedback { border:none; padding: .5em; }
+.feedback {
+	border:none;
+	font-size: 14px;
+	padding: .5em .5em .3em;
+}
 .ok{
 	border-left: 3px solid #20D026;
 	background-color: #E8FFE8;
