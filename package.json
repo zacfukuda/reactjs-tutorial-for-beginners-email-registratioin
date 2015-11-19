@@ -1,0 +1,36 @@
+{
+  "name": "008-reactjs-tutorial-for-beginners-email-register",
+  "version": "1.0.0",
+  "description": "The tutorial of React.js for beginners. Create a simple email register form with real-time feedback.",
+  "main": "js/app.js",
+  "dependencies": {
+    "react": "^0.12.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "envify": "^3.0.0",
+    "jest-cli": "^0.4.3",
+    "reactify": "^0.15.2",
+    "uglify-js": "~2.4.15",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d js/app.js",
+    "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "React.js"
+  ],
+  "author": "Zac Fukuda",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "jest": {
+    "rootDir": "./js"
+  },
+  "license": "ISC"
+}
