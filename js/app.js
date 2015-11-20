@@ -48,14 +48,14 @@ var EmailInput = React.createClass({
 
 var Feedback = React.createClass({
 	render: function () {
-		var className = 'feedback' + this.props.status;
+		var className = 'feedback ' + this.props.status;
 		return (
 			<p className={className}>{this.props.feedback}</p>
 		);
 	}
 });
 
-var ContactForm = React.createClass({
+var RegistrationForm = React.createClass({
 	getInitialState: function () {
 		return ({
 			status: '',
@@ -73,7 +73,7 @@ var ContactForm = React.createClass({
 
 		if ( name !== ok || email !== ok) {
 			feedback = 'ERROR: Please check the form.';
-			status = ' err';
+			status = 'err';
 			this.setState({status: status, feedback: feedback})
 			return 0
 		}
@@ -86,7 +86,7 @@ var ContactForm = React.createClass({
 		feedback = 'Your email has been registered.';
 		this.refs.name.setState({className: '', value: ''});
 		this.refs.email.setState({className: '', value: ''});
-		this.setState({status: ' ' + ok, feedback: feedback});
+		this.setState({status: ok, feedback: feedback});
 
 		/**
 		 * Your ajax event might come here.
@@ -124,6 +124,6 @@ var ContactForm = React.createClass({
 });
 
 React.render(
-	<ContactForm />,
+	<RegistrationForm />,
 	document.getElementById('register')
 );

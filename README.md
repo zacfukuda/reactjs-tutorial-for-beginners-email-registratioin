@@ -6,7 +6,7 @@ This is a source code for my tutorial. For detail, please check the link below.
 
 This is what a form looks like:
 
-<img src="screenshot.png" style="max-width:100%;display:block;" />
+<img src="screenshot.png" style="max-width:100%;" />
 
 ### Running
 
